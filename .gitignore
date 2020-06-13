@@ -72,6 +72,9 @@ typings/
 dist
 content/products/*
 
+# bash
+scripts/deploy.sh
+
 # vuepress build output
 .vuepress/dist
 

@@ -58,6 +58,9 @@ export default {
 
     }
   },
+  router: {
+    base: '/blackmagic/'
+  },
   content: {
     fullTextSearchFields: ['searchmeta','name']
   },

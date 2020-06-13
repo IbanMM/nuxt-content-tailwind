@@ -12,7 +12,7 @@
 
         <div class="bg-gray-200">
 
-            <div class="container mx-auto mt-16 bg-color-">
+            <div class="container mx-auto mt-16">
 
                 <last-products
                     :products="products"
@@ -67,7 +67,10 @@ export default {
 
     .textbbdd h1 {
         @apply text-2xl;
+        @apply mt-8;
+        @apply pb-4;
         @apply font-tit;
+        @apply font-bold;
     }
 
     .textbbdd h2 {
@@ -75,6 +78,7 @@ export default {
         @apply font-tit;
         @apply mt-8;
         @apply pb-4;
+        @apply font-bold;
     }
 
     .textbbdd h3 {
@@ -82,10 +86,15 @@ export default {
         @apply font-tit;
         @apply mt-8;
         @apply pb-4;
+        @apply font-bold;
     }
 
     .textbbdd a {
         @apply text-teal-600;
+    }
+
+    .textbbdd p {
+        @apply text-gray-700;
     }
   
 </style>
