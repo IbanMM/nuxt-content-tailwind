@@ -1,6 +1,6 @@
 # Black Metal Stak: JAM stack + No BBDD + Tailwind CSS
 
-> Jam Stack Example with Nuxy, content & Tailwind CSS
+> Jam Stack Example with Nuxt, Nuxt Content & Tailwind CSS
 
 ## Build Setup
 
