@@ -12,8 +12,10 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },      
+      { rel: 'preconnect', href: '//fonts.googleapis.com', crossorigin: 'crossorigin' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:300,400,700&display=swap' }
+    ],
   },
   /*
   ** Customize the progress-bar color
@@ -40,7 +42,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa',
+    //'@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxt/content',
@@ -53,8 +55,11 @@ export default {
       return files.map((file) =>{
         return '/product/' + file.id
       })
-      
+
     }
+  },
+  content: {
+    fullTextSearchFields: ['searchmeta','name']
   },
   /*
   ** Build configuration

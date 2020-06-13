@@ -15,5 +15,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo magna
 ### Subsubtitular
 
 Lorem [Esto es un link](http://www.google.com) con unas **negritas** y tal y cual.
-
-### Products

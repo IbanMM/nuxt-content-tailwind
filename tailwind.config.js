@@ -1,11 +1,9 @@
 /*
 ** TailwindCSS Configuration File
 **
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  purge: ['./components/*.vue','./layouts/*.vue','./pages/*.vue'],
+  purge: ['./components/*.vue','./layouts/*.vue','./pages/**/*.vue'],
   target: 'relaxed',
   prefix: '',
   important: false,
@@ -237,8 +235,8 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      sans: ["'Open Sans'",'Arial','sans-serif'],
-      tit: ["'Fjalla One'", 'sans-serif'],
+      sans: ["Roboto",'Arial','sans-serif'],
+      tit: ["Montserrat", 'sans-serif'],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
@@ -313,6 +311,7 @@ module.exports = {
     maxHeight: {
       full: '100%',
       screen: '100vh',
+      '1/2': '50vh'
     },
     maxWidth: (theme, { breakpoints }) => ({
       none: 'none',
@@ -333,6 +332,7 @@ module.exports = {
       '0': '0',
       full: '100%',
       screen: '100vh',
+      '1/2': '50vh'
     },
     minWidth: {
       '0': '0',

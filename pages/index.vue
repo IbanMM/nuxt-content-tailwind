@@ -1,65 +1,91 @@
 <template>
 
-  <div class="container mx-auto">
+    <div>
 
-    <nuxt-content :document="page" />
+        <div class="container mx-auto mt-16 textbbdd">
 
-    <last-products
-      :products="products"
-    />
+            <nuxt-content :document="page" />
 
-  </div>
+            <Search />
+        
+        </div>
+
+        <div class="bg-gray-200">
+
+            <div class="container mx-auto mt-16 bg-color-">
+
+                <last-products
+                    :products="products"
+                />
+
+            </div>
+
+        </div>
+
+    </div>
 
 </template>
 
 <script>
 
 import LastProducts from '~/components/LastProducts.vue'
+import Search from '~/components/Search.vue'
 
 export default {
 
-  components: {
+    components: {
 
-    LastProducts
+        LastProducts,
+        Search
 
-  },
+    },
 
-  data() {
+    data() {
 
-    return {
+        return {
 
-      page: false,
-      products: false
+            page: false,
+            products: false
 
-    }
+        }
 
-  },
+    },
 
-  async fetch(){
+    async fetch(){
 
-    this.page =  await this.$content('index').fetch();
-    this.products = await this.$content('products').limit(5).fetch();
-    
-  },
+        this.page =  await this.$content('index').fetch()
+        this.products = await this.$content('products').sortBy('id').limit(8).fetch()
+
+    },
 
 }
 </script>
 
 <style lang="postcss">
 
-  @tailwind base;
+    @tailwind base;
 
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  h3 {
-    @apply text-lg;
-  }
-  a {
-    @apply text-blue-600 underline;
-  }
+    .textbbdd h1 {
+        @apply text-2xl;
+        @apply font-tit;
+    }
+
+    .textbbdd h2 {
+        @apply text-xl;
+        @apply font-tit;
+        @apply mt-8;
+        @apply pb-4;
+    }
+
+    .textbbdd h3 {
+        @apply text-lg;
+        @apply font-tit;
+        @apply mt-8;
+        @apply pb-4;
+    }
+
+    .textbbdd a {
+        @apply text-teal-600;
+    }
   
 </style>
