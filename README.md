@@ -1,4 +1,4 @@
-# Black Metal Stak: JAM stack + No BBDD + Tailwind CSS
+# Black Magic Stack: JAM stack + No BBDD + Tailwind CSS
 
 > Jam Stack Example with Nuxt, Nuxt Content & Tailwind CSS
 
