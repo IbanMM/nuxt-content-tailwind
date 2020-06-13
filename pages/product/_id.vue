@@ -47,8 +47,6 @@
             const query = await this.$content('products').where({id: Number(this.id)}).limit(5).fetch()
             this.product = query[0]
 
-            console.log(query)
-
         }
 
     }
