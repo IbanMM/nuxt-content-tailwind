@@ -2,7 +2,7 @@
 
     <div>
 
-        <div class="container mx-auto mt-16 textbbdd">
+        <div class="container mx-auto mt-16 textbbdd px-2">
 
             <nuxt-content :document="page" />
 
@@ -12,7 +12,7 @@
 
         <div class="bg-gray-200">
 
-            <div class="container mx-auto mt-16">
+            <div class="container mx-auto mt-16 px-2">
 
                 <last-products
                     :products="products"

@@ -2,9 +2,9 @@
 
     <div v-if="product">
 
-        <div class="container mx-auto pt-2 pb-16 mt-1 ">
+        <div class="container mx-auto pt-2 lg-pb-8 lg-pb-16 mt-1 px-2">
 
-            <div class="rounded-md px-6 py-2 mb-16 w-full bg-teal-400 text-white text-xs no-underline divide-x divide-white">
+            <div class="rounded-md px-6 py-2 mb-8 lg-mb-16 w-full bg-teal-400 text-white text-xs no-underline divide-x divide-white z-20 relative">
 
                 <n-link to="/" class="underline pr-4">Inicio</n-link>
 
@@ -12,17 +12,17 @@
             
             </div>
 
-            <h1 class="text-6xl font-bold text-teal-400">{{product.name}}</h1>
+            <h1 class="text-4xl lg-text-6xl font-bold text-teal-400">{{product.name}}</h1>
 
         </div>
 
-        <div class="max-h-1/2 min-h-1/2 w-full overflow-hidden bg-gray-400">
+        <div class="max-h-1/2 min-h-1/2 w-full overflow-hidden bg-gray-300">
 
             <img class="object-cover h-full w-full bmimg lazyload" :data-src="product.imagexl" />
 
         </div>
 
-        <div class="container mx-auto mt-8 pb-24">
+        <div class="container mx-auto mt-8 pb-24 px-2">
 
             <p class="mt-3 mb-3 text-gray-700 font-sans">{{product.description}}</p>
 

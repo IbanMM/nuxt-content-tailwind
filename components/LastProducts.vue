@@ -4,13 +4,13 @@
 
         <h2 class="text-5xl font-bold text-teal-400">Últimos productos</h2>
 
-        <div class="grid grid-cols-4 gap-4 mt-8">
+        <div class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-4 gap-4 mt-8">
         
             <div v-for="(product,index) in products" :key="index" class="mb-8">
                 
                 <h3 class="text-3xl font-bold text-teal-400">{{product.name}}</h3>
 
-                <div class="h-64 w-full rounded-lg overflow-hidden gray-700">
+                <div class="h-64 w-full rounded-lg overflow-hidden bg-gray-300">
 
                     <img class="object-cover h-64 w-full bmimg lazyload" :data-src="product.imagexl" />
 

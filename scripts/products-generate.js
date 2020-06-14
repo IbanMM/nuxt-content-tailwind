@@ -30,7 +30,7 @@ for(let i = 0; i < productsNumber; i++) {
             throw err
         }
 
-        console.log("JSON de producto ok")
+        console.log(`JSON de producto ok ${i}`)
 
     })
 

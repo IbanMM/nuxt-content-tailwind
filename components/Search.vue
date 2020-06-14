@@ -58,13 +58,11 @@
                 }
 
                 this.searching = true
+                
                 this.results = await this.$content('products')
                     .search(q)
                     .sortBy('id')
                     .fetch({ deep: true })
-
-                console.log(q)
-                console.log(this.results)
                 
                 this.searching = false
 

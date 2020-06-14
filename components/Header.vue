@@ -4,7 +4,7 @@
 
         <div class="container mx-auto pt-2 flex justify-center">
 
-            <n-link to="/" class="w-1/3 px-4 mx-auto inline-block">
+            <n-link to="/" class="w-full lg-w-1/3 px-4 mx-auto inline-block">
 
                 <Logo />
 
