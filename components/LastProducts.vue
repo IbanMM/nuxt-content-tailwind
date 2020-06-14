@@ -10,9 +10,9 @@
                 
                 <h3 class="text-3xl font-bold text-teal-400">{{product.name}}</h3>
 
-                <div class="h-64 w-full rounded-lg overflow-hidden">
+                <div class="h-64 w-full rounded-lg overflow-hidden gray-700">
 
-                    <img class="object-cover h-64 w-full" :src="product.imagexl" />
+                    <img class="object-cover h-64 w-full bmimg lazyload" :data-src="product.imagexl" />
 
                 </div>
 
