@@ -8,7 +8,7 @@
 
         </div>
 
-        <div class="rounded-full  py-2 w-full bg-teal-400 text-center text-white text-xs no-underline">
+        <div class="rounded-full py-2 w-full bg-teal-400 text-center text-white text-xs no-underline">
 
             <span clasS="inline-block no-underline">{{product.name}}</span>
 

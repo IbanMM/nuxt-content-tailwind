@@ -6,7 +6,7 @@
 
         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Busca en 200 productos" v-model="q">
 
-        <div v-if="results.length" class="grid grid-cols-6 gap-4">
+        <div v-if="results.length" class="grid grid-cols-2 md-grid-cols-3 lg-grid-cols-6 gap-4">
 
             <SearchResult v-for="(product,index) in results" 
                 :key="index"

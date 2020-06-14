@@ -1,6 +1,6 @@
 <template>
 
-    <div v-if="product">
+    <div>
 
         <div class="container mx-auto pt-2 lg-pb-8 lg-pb-16 mt-1 px-2">
 
@@ -61,7 +61,7 @@
 
         },
 
-        async created () {
+        async fetch() {
 
             const query = await this.$content('products').where({id: Number(this.id)}).fetch()
             this.product = query[0]
