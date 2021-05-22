@@ -69,7 +69,6 @@ typings/
 .nuxt
 
 # Nuxt generate
-dist
 content/products/*
 
 # bash
