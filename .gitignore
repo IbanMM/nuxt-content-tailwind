@@ -68,9 +68,6 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# Nuxt generate
-content/products/*
-
 # bash
 scripts/deploy.sh
 
